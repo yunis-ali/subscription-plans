@@ -18,11 +18,11 @@ export const Header: React.FC<HeaderProps> = ({ user, onLogin, onLogout, onSignU
       </div>
       <div>
         {user ? (
-          <ContainedButton size="small" onClick={onLogout} label="Log out" />
+          <ContainedButton primary="true" size="small" onClick={onLogout} label="Log out" />
         ) : (
           <>
-            <ContainedButton size="small" onClick={onLogin} label="Log in" />
-            <ContainedButton primary size="small" onClick={onSignUp} label="Sign up" />
+            <ContainedButton primary="false" size="small" onClick={onLogin} label="Log in" />
+            <ContainedButton primary="false" size="small" onClick={onSignUp} label="Sign up" />
           </>
         )}
       </div>

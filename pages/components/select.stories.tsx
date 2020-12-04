@@ -13,4 +13,6 @@ export default {
 const Template: Story = (args) => <SimpleSelect {...args} />;
 
 export const Currency = Template.bind({});
-Currency.args = { };
+Currency.args = { 
+  label: "Currency" 
+};

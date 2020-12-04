@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 export interface ContainedButtonProps {
-  primary?: boolean;
+  primary: string;
   backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
   label: string;
@@ -26,7 +26,7 @@ export interface ContainedButtonProps {
 export const ContainedButton = (props: ContainedButtonProps) => {
   const classes = useStyles();
 
-  const btnColor = props.primary ? 'primary' : 'secondary';
+  const btnColor = props.primary == "true" ? 'primary' : 'secondary';
 
   return (
     <div className={classes.root}>

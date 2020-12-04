@@ -18,7 +18,12 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export const SimpleSelect = ({label}) => {
+export interface SimpleSelectProps {
+  label: string;
+  options?: []
+}
+
+export const SimpleSelect = (props: SimpleSelectProps) => {
   const classes = useStyles();
   const [selectedValue, setSelectedValue] = React.useState(0);
 
@@ -29,7 +34,7 @@ export const SimpleSelect = ({label}) => {
   return (
     <div>
       <FormControl className={classes.formControl}>
-        <InputLabel id="simple-select-label">{label}</InputLabel>
+        <InputLabel id="simple-select-label">{props.label}</InputLabel>
         <Select
           labelId="simple-select-label"
           id="simple-select"
