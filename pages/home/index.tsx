@@ -1,18 +1,28 @@
 import Head from 'next/head'
-import styles from './style.module.scss'
+import styles from './home.module.css'
+import { Button } from '../subscription-plans/Button.component';
+
+/* export interface HomeProps {
+  onLogin: () => any;
+} */
 
 export default function Home() {
+  const onLogin = () => { alert("login") };
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> 
 
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <p>
+          <Button primary={true} size="large" onClick={onLogin} label="Log in" />
+        </p>
 
         <p className={styles.description}>
           Get started by editing{' '}

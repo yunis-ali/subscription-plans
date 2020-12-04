@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Header } from '../Header/Header';
-import './page.scss';
+import { Header } from './Header.component';
+import './subscription-plans.module.css';
 
 export interface PageProps {
   user?: {};

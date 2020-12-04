@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Button } from '../Button/Button';
-import './header.scss';
+import { Button } from './Button.component';
+import './subscription-plans.module.css';
 
 export interface HeaderProps {
   user?: {};

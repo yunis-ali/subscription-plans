@@ -1,5 +1,6 @@
 import React from 'react';
-import './button.scss';
+import './subscription-plans.module.css';
+import styles from './subscription-plans.module.css';
 
 export interface ButtonProps {
   /**
@@ -34,11 +35,13 @@ export const Button: React.FC<ButtonProps> = ({
   label,
   ...props
 }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  var btnDefault = styles.storybookButton;
+  var btnMode = primary ? styles.storybookButtonPrimary : styles.storybookButtonSecondary;
+  var btnSize = size == 'small' ? styles.storybookButtonSmall : size == 'medium' ? styles.storybookButtonMedium : styles.storybookButtonLarge;
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={[btnDefault, btnSize, btnMode].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
