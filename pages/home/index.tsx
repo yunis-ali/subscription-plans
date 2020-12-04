@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from './home.module.css'
-import { Button } from '../subscription-plans/Button.component';
+import { Button } from '../subscription-plans/button.component';
 
 /* export interface HomeProps {
   onLogin: () => any;

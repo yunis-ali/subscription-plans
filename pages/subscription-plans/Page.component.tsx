@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header } from './Header.component';
+import { Header } from './header.component';
 import './subscription-plans.module.css';
 
 export interface PageProps {

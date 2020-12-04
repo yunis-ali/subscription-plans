@@ -35,13 +35,14 @@ export const Button: React.FC<ButtonProps> = ({
   label,
   ...props
 }) => {
-  var btnDefault = styles.storybookButton;
+  var btnClass = styles.button;
+  var btnStyle = styles.storybookButton;
   var btnMode = primary ? styles.storybookButtonPrimary : styles.storybookButtonSecondary;
   var btnSize = size == 'small' ? styles.storybookButtonSmall : size == 'medium' ? styles.storybookButtonMedium : styles.storybookButtonLarge;
   return (
     <button
       type="button"
-      className={[btnDefault, btnSize, btnMode].join(' ')}
+      className={[btnClass, btnStyle, btnSize, btnMode].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
