@@ -32,4 +32,16 @@ accordingly.
 ## Out of scope
 
 - Don’t feel the need to document the project other than perhaps instructions on how to
-make it work on our machines to check it.
+make it work on our machines to check it.  
+
+# Run Application
+
+Run NextJS app  
+`npm run dev`  
+  
+Run Storybook Components  
+`npm run storybook`  
+
+
+
+
