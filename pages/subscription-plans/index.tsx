@@ -21,7 +21,7 @@ export default function Home() {
                 <SimpleSelect label="Currency"></SimpleSelect>
                 <CustomizedSwitch></CustomizedSwitch>
                 <EnhancedTable></EnhancedTable>
-                <ContainedButton primary={true} label="Get Started" onClick={onGetStarted}></ContainedButton>
+                <ContainedButton primary="true" label="Get Started" onClick={onGetStarted}></ContainedButton>
             </Container>
         </>
     )

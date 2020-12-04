@@ -6,12 +6,12 @@ export interface PageProps {
   user?: {};
   onLogin: () => void;
   onLogout: () => void;
-  onCreateAccount: () => void;
+  onSignUp: () => void;
 }
 
-export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onSignUp }) => (
   <article>
-    <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
+    <Header title="Subscription Plans" user={user} onLogin={onLogin} onLogout={onLogout} onSignUp={onSignUp} />
 
     <section>
       <h2>Pages in Storybook</h2>

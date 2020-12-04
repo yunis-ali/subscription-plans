@@ -16,13 +16,13 @@ const Template: Story<ContainedButtonProps> = (args) => <ContainedButton {...arg
 
 export const GetStartedEnabled = Template.bind({});
 GetStartedEnabled.args = {
-  primary: true,
+  primary: "true",
   label: 'Get Started',
 };
 
 export const GetStartedDisabled = Template.bind({});
 GetStartedDisabled.args = {
-  primary: false,
+  primary: "false",
   label: 'Get Started',
 };
 
