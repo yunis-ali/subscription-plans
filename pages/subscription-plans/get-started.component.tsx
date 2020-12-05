@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export interface ContainedButtonProps {
+export interface GetStartedProps {
   primary: string;
   backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
@@ -23,7 +23,7 @@ export interface ContainedButtonProps {
   onClick?: () => void;
 }
 
-export const ContainedButton = (props: ContainedButtonProps) => {
+export const GetStarted = (props: GetStartedProps) => {
   const classes = useStyles();
 
   const btnColor = props.primary == "true" ? 'primary' : 'secondary';
