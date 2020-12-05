@@ -18,12 +18,12 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export interface SimpleSelectProps {
+export interface CurrencyProps {
   label: string;
   options?: []
 }
 
-export const SimpleSelect = (props: SimpleSelectProps) => {
+export const Currency = (props: CurrencyProps) => {
   const classes = useStyles();
   const [selectedValue, setSelectedValue] = React.useState(0);
 

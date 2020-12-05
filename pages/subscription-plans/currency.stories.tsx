@@ -2,17 +2,17 @@ import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { SimpleSelect } from './select.component';
+import { Currency } from './currency.component';
 
 export default {
-  title: 'Components / Selector',
-  component: SimpleSelect,
+  title: 'Subscription Plans / Currency',
+  component: Currency,
   argTypes: { },
 } as Meta;
 
-const Template: Story = (args) => <SimpleSelect {...args} />;
+const Template: Story = (args) => <Currency {...args} />;
 
-export const Currency = Template.bind({});
-Currency.args = { 
+export const DefaultState = Template.bind({});
+DefaultState.args = { 
   label: "Currency" 
 };
